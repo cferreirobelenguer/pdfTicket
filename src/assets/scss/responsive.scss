@@ -1,0 +1,6 @@
+
+@mixin desktop_sm() {
+    @media screen and (min-width: 900px){
+        @content
+    }
+}

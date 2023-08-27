@@ -1,11 +1,11 @@
 <section class="description">
-    <img src="">
+    <img class="description__img" src={{this.data.image}}>
     <div class="description__container">
-        <h1 class="description__container__title">Título</h1>
-        <p class="description__container__description">Descripción</p>
+        <h1 class="description__container__title">{{this.data.title}}</h1>
+        <p class="description__container__description">{{this.data.description}}</p>
         <div class="description__container__price">
-            <p class="description__container__pricetitle">Precio</p>
-            <p class="description__container__pricetitle">Descuento</p>
+            <p class="description__container__pricetitle">{{this.data.price}}</p>
+            <p class="description__container__pricetitle">50%</p>
         </div>
     </div>
 </section>

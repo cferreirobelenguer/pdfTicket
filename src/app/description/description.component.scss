@@ -1,9 +1,24 @@
+@import '../../assets/scss/responsive.scss';
 .description {
+    padding: 64px 32px;
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 24px;
     justify-content: flex-start;
     align-items: center;
-    max-width: 700px;
+    @include desktop_sm {
+        flex-direction: row;
+        padding: 100px;
+        gap: 32px;
+    };
+    &__img {
+        width: 200px;
+        height: 200px;
+        @include desktop_sm {
+            width: 400;
+            height: 400;
+        }
+    }
     &__container {
         display: flex;
         flex-direction: column;
