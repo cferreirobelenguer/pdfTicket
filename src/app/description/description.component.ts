@@ -27,10 +27,16 @@ export class DescriptionComponent implements OnInit{
     this.getProduct();
   }
 
-  getProduct() {
+  //http function
+  public getProduct() :void {
     this.productService.getData().subscribe(res => {
       this.data = res
       console.log(this.data)
     });
+  }
+
+  //pdf function
+  public handleClick() : void {
+
   }
 }

@@ -1,23 +1,29 @@
 @import '../../assets/scss/responsive.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
 .description {
     padding: 64px 32px;
     display: flex;
     flex-direction: column;
     gap: 24px;
     justify-content: flex-start;
-    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
     @include desktop_sm {
         flex-direction: row;
-        padding: 100px;
+        padding: 80px;
         gap: 32px;
+        align-items: center
     };
     &__img {
         width: 200px;
         height: 200px;
         @include desktop_sm {
-            width: 400;
+            width: 450;
             height: 400;
         }
+    }
+    &__priceitems {
+        display: flex;
+        flex-direction: column;
     }
     &__container {
         display: flex;
@@ -26,6 +32,8 @@
         justify-content: flex-start;
         &__title {
             margin: 0;
+            font-weight: 700;
+            color: hsl(220, 13%, 13%);
         }
         &__description {
             margin: 0;
@@ -33,11 +41,43 @@
         &__pricetitle {
             margin: 0;
         }
+        &__discount {
+            margin: 0;
+            color:hsl(26, 100%, 55%);
+            font-weight: 700;
+            border-radius: 5px;
+            padding: 8px;
+            background-color: hsl(25, 100%, 94%);
+        }
+        &__beforeprice {
+            margin: 0;
+            font-weight: 700;
+            color: hsl(220, 14%, 75%);
+
+        }
         &__price {
             display: flex;
             gap:12px;
             align-items: center;
             justify-content: flex-start;
+        }
+    }
+    &__shopping {
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        background-color: hsl(26, 100%, 55%);
+        color: #fff;
+        border-radius: 5px;
+        width: 150px;
+        height: 20px;
+        align-items: center;
+        &--button {
+            background-color: hsl(26, 100%, 55%);
+            color: #fff;
+            border-style: none;
+            border-radius: 5px;
         }
     }
 }
