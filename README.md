@@ -1,4 +1,4 @@
-# Proyect Angular API REST and download pdf
+# Project Angular API REST and download pdf
 
 ## Technologies:
 
